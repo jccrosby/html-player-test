@@ -12,77 +12,11 @@
 
 <body>
     <ul>
+        <li><a href="simple-video.html">Simple Video</a></li>
         <li><a href="iframe-embed.html">Iframe Embed + Autoplay</a></li>
+        <li><a href="autoplay.html">Autoplay</a></li>
+        <li><a href="embed.html">Embed</a></li>
     </ul>
-    <!-- <video id="html5-player-BamHTMLPlayer-1539626968674" class="video-player__screen js-video-content" width="320" crossorigin="anonymous"
-        playsinline="true" style="display: block;" src="https://mediadownloads.mlb.com/mlbam/mp4/2018/10/14/2515999483/1539560696407/asset_1800K.mp4"
-        controls="controls" title="Chacin vs. Buehler" poster="https://mediadownloads.mlb.com/mlbam/2018/10/14/images/mlbf_2515999483_th_48.jpg">
-        <track kind="captions" label="English Captions" src="https://mediadownloads.mlb.com/mlbam/mp4/2018/10/14/2515999483/1539560696407/asset.vtt"
-            crosorigin="anonymous" default="">
-    </video> -->
-    <!-- video src="https://media.minorleaguebaseball.com/milb/2018/08/17/milb_2394895083_1m.mp4" controls autoplay crossorigin="anonymous" -->
-    <!--track kind="captions" label="English Captions" src="https://mediadownloads.mlb.com/mlbam/mp4/2018/08/24/2420253283/1535087545758/asset.vtt" default=""-->
-    <!-- track kind="captions" label="English Captions" src="./asset.vtt" default="" -->
-    <!-- /video -->
-
-    <script>
-       $(() => {
-
-            //const videoNode = `<video controls="controls" muted="muted"
-            //    width="640" height="360"
-            //    src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"></video>;
-
-            //$('body').append(videoNode);
-
-            const buildSourceNode = (source) => {
-
-                const sourceNode = document.createElement('source');
-
-                sourceNode.setAttribute('src', source);
-                sourceNode.setAttribute('type', 'video/mp4');
-
-                return sourceNode;
-
-            };
-
-            const buildVideoNode = () => {
-
-                //const $videoNode = $(`<video muted controls width="600" height="340" />`);
-                const videoNode = document.createElement('video');
-
-                videoNode.setAttribute('width', '600');
-                videoNode.setAttribute('height', '340');
-                videoNode.setAttribute('playsinline', true);
-                videoNode.muted = true;
-                videoNode.controls = true;
-                videoNode.autoplay = true;
-                videoNode.loop = true;
-
-                videoNode.append(buildSourceNode('http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'));
-                //$videoNode.append(buildSourceNode('http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'));
-
-                return videoNode;
-                //return $videoNode[0];
-
-            };
-
-            const appendVideoNode = (videoNode) => {
-
-                $('body').append(videoNode);
-
-            };
-
-            const init = () => {
-
-                appendVideoNode(buildVideoNode());
-
-            };
-
-            init();
-
-        });
-    </script>
-
 </body>
 
 </html>
